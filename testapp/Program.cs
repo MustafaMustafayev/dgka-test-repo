@@ -21,6 +21,8 @@ internal class Program
         {
             Console.WriteLine("can not log in");
         }
+
+        Logout();
     }
 
     static bool LoginAdmin(string name, string password)
@@ -35,5 +37,10 @@ internal class Program
     static void ShowUserInfo(string username)
     {
         Console.WriteLine("you are " + username);
+    }
+      
+    static void Logout()
+    {
+        Console.WriteLine("logged out");
     }
 }
