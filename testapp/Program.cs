@@ -15,6 +15,7 @@ internal class Program
         if(isAdmin)
         {
             Console.WriteLine("logged in");
+            ShowUserInfo(username);
         }
         else
         {
@@ -29,5 +30,10 @@ internal class Program
             return true;
         }
         return false;
+    }
+
+    static void ShowUserInfo(string username)
+    {
+        Console.WriteLine("you are " + username);
     }
 }
